@@ -51,7 +51,7 @@ tpreds <- predict(clf, data.matrix(test[, feature.names]))
 tmat <- get_proba(tpreds, Id = test$ID)
 write_csv(tmat, "./XGB_Commit1_test.csv")
 s_test <- get_predict(tmat, isTest = TRUE)
-write_csv(s_test, "./XGB_COMMIT_1.csv")
+write_csv(s_test, "./XGB_COMMIT_1.csv")                   # public LB: 84.9%
 
 ##################################################################################
 ########################## POST PROCESS MODEL OUTPUTS ############################
